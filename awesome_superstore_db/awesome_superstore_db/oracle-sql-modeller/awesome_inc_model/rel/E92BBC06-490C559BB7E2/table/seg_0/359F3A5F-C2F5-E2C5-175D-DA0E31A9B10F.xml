@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="359F3A5F-C2F5-E2C5-175D-DA0E31A9B10F" name="PKBC_CATEGORY">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:58:12 UTC</createdTime>
+<generatorID>EE5912B2-291D-F5EE-E2EB-5817A5FAE2E8</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<ordsAlias>pkbc_categoryv1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CATEGORY_ID" id="88A615D1-2B54-C985-0134-6F177BFF477F">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Category id.]]></commentInRDBMS>
+<generatorID>9C26E189-641E-EED9-5A80-BA92E89B0E39</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_NAME" id="E4633823-8A01-1B83-CF76-BD8C63A96C4A">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Category Name]]></commentInRDBMS>
+<generatorID>F6901475-4201-90B4-D14F-FC77D018A14B</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="A7BE6236-9C34-C713-58AE-669EF80F046F">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:58:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<generatorID>C1EC7D9A-7920-AA0C-A8E1-FCB92B6B24FB</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1F6A318-A11F-D7CB-A1F1-D8236A0A2B96" name="PKBC_CATEGORYv1_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:58:12 UTC</createdTime>
+<generatorID>F8677114-1444-7A78-D4F8-1ADBF00C3AE8</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88A615D1-2B54-C985-0134-6F177BFF477F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

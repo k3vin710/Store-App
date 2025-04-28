@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4031FE4B-158A-EC47-44B0-BE5D7D578243" name="PKBC_REGION">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>D18F1A18-241E-3D62-C8E2-BA1D420D7385</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REGION_ID" id="57425273-67D7-1F89-D34C-4B7FF016F40F">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country id]]></commentInRDBMS>
+<generatorID>FF9C3B3F-DD66-AB63-A2B8-B1205B43A479</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_NAME" id="CCF33C48-0C5B-24DB-A117-159765285A83">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country Name]]></commentInRDBMS>
+<generatorID>6E55E4DB-E428-827E-E57A-5DAB0F7C2CA4</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="E6EFD5B2-94F2-2E6E-62F4-55B79E79B20B">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<generatorID>47C3A6F0-CD37-2A29-D2EA-B3F538189D74</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C02F591A-57E3-8BDC-D6DC-938173563F4C" name="PKBC_REGION_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>19B63853-FEAC-579D-0E5F-42695DDA233D</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57425273-67D7-1F89-D34C-4B7FF016F40F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

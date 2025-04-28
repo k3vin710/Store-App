@@ -1,0 +1,19 @@
+Create OLTP schema.
+Populate OLTP tables.
+De-normalize OLTP tables.
+Create DWS owner (user in DW database, that will have DW tables).
+
+---done unitl here
+Create STAGE table in DWS.  --- add to every table in DW: alter table table_name add tbl_last_date timestamp default sysdate;
+
+Create full extract CSV file from OLTP tables that match the table structure of DW tables.
+Copy CSV file to shared folder (e.g. STUDENT).
+Use SQL*Loader to load full extract to DW table.
+Run DB procedure to populate data from Stage tables to DW tables.
+Extract incremental data from OLTP and crate incremental CSV file.
+Load data from incremental CSV file to DW stage tables.
+Run DB procedure to populate/update data from stage table to DW tables.
+
+
+
+SQLLDR CONTROL=sample.ctl, LOG=sample.log, BAD=sample.bad, DATA=sample.dat USERID=scott/tiger@dbname

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EB026CB-7598-E4CA-2CB5-B104949CCA24" name="PKBC_CUSTOMER">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>5738A7E1-6B20-341C-1522-3824C278487C</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="EBF8CCA9-1158-7E73-DB36-56C9C919AF40">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Id.]]></commentInRDBMS>
+<generatorID>6E5298A4-2F4F-63EE-5DBC-A89CE1554C18</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_NAME" id="E95EDA82-85E7-9EA4-3C84-B9D65E92313C">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer name]]></commentInRDBMS>
+<generatorID>E5EA2D43-07D2-1674-411C-D95843B35BE4</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGMENT" id="973EC24E-6084-4067-3286-62F094934199">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Segment. 1: Consumer , 2: Corporate, 3: Home Office]]></commentInRDBMS>
+<generatorID>C6EA128E-9A81-1823-0FDA-395FE734C452</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="60AB68FB-70A1-E3B3-013F-E4D2DE8C9263">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-01 22:50:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email of the customer]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="D0A86F4C-DFED-1702-DE83-6F63892457C9">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-01 22:50:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Password of the login of the customer]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="C9FC36D7-08DC-B924-C543-533F5A06D7FC">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<generatorID>21D503F1-7899-ED6A-F22C-0B73F27E3202</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A795F438-C5A4-2226-F077-89870FF2D757" name="PKBC_CUSTOMER_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>4F0F4EFE-A9DD-C481-30F4-14C3946B67E7</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBF8CCA9-1158-7E73-DB36-56C9C919AF40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

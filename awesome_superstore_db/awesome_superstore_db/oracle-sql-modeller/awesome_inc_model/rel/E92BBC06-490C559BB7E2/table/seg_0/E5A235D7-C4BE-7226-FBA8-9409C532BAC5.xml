@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E5A235D7-C4BE-7226-FBA8-9409C532BAC5" name="PKBC_CITY">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>441D7B1A-B87A-920F-FFBC-8C806E7F9F68</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CITY_ID" id="34658EE0-5C6E-E011-AD99-6289A764C727">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[City Id]]></commentInRDBMS>
+<generatorID>31A23A63-BA3D-951E-9868-67B92A2948D4</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_NAME" id="050D8B0B-D63E-B174-272B-BEA599328DF2">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[City Name]]></commentInRDBMS>
+<generatorID>4E7152C0-8B94-CCF7-F665-BCB544B1AC2A</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE_ID" id="F72C3783-E446-6122-5499-E94E66E2083D">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-07 17:11:13 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43B38315-5D08-C4A0-F0D6-B88721A9CFA5" referredColumn="79914165-E3C0-58AA-9855-11536B182C4E"/>
+</associations>
+</Column>
+<Column name="TBL_LAST_DT" id="077DB5FA-CC85-62A8-1504-E3B2A09E67E2">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<generatorID>FC1FA720-4193-B8AE-B2F9-86E9D0DBC86F</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="50F33F05-DF5F-8DDA-6245-10A2E7C92EE3" name="PKBC_CITY_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>C1229900-1A9B-F04F-0994-B4F5FFD8BDCE</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34658EE0-5C6E-E011-AD99-6289A764C727"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62E7CAD1-DA07-3EE6-DDD9-D884A63BF052" name="PKBC_CITY_PKBC_STATE_FK">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-07 17:11:13 UTC</createdTime>
+<generatorID>6E3AAB31-EB9B-5EE3-F4D4-C9C2226F86E6</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F72C3783-E446-6122-5499-E94E66E2083D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

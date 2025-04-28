@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29B62FA2-C01C-E4AE-E5DC-336C93DB2737" name="PKBC_SUB_CATEGORY">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:55:24 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SUB_CATEGORY_ID" id="E1DC1BD1-1DF2-1F22-6A44-A78F16405DA3">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:55:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Category id.]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_CATEGORY_NAME" id="1169B973-6C27-830A-08FA-655C6077988E">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:55:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Category Name]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="9C8247F2-712C-B1BF-7705-83D93EFA3275">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:55:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORY_ID" id="C9395CCA-D95D-6D1C-517D-AA52C007927B">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:56:24 UTC</createdTime>
+<generatorID>FC3CFCAD-199F-0C42-64E1-9A175A07FCBF</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>9C26E189-641E-EED9-5A80-BA92E89B0E39</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="043211E9-1FDC-F4AB-8412-BF44E944B736" name="PKBC_CATEGORY PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-10-25 20:55:24 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1DC1BD1-1DF2-1F22-6A44-A78F16405DA3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

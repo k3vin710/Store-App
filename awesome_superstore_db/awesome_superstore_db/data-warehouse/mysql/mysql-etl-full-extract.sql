@@ -1,0 +1,104 @@
+use awesome_inc;
+
+drop procedure if exists USP_Run_ETL_Full_Extract;
+delimiter $$
+create procedure USP_Run_ETL_Full_Extract()
+BEGIN
+
+--
+
+select 
+	 a.addr_id as address_id, 
+		a.postal_code as postal_code,
+        b.city_name as city_name, 
+        c.state_name as state_name,  
+        d.country_name as country_name, 
+        e.region_name as region_name,
+		a.tbl_last_dt
+into outfile 'fullstg_pkbc_dim_address.csv'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM pkbc_address a 
+		INNER JOIN pkbc_city b on a.city_id = b.city_id
+        INNER JOIN pkbc_state c on b.state_id = c.state_id
+        INNER JOIN pkbc_country d on c.country_id = d.country_id
+        INNER JOIN pkbc_region e on d.region_id = e.region_id;
+        
+--
+        
+select 	cust_id , 
+     cust_name,
+     segment  ,
+     email   ,
+     `password` ,
+	 tbl_last_dt
+into outfile 'fullstg_pkbc_dim_customer.csv'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM pkbc_customer ; 
+  
+  --
+  
+  select 
+	  product_id ,
+	  product_name,      
+	  unit_price , 
+	  market ,
+	  tbl_last_dt	  
+into outfile 'fullstg_pkbc_dim_product.csv'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM pkbc_product ; 	
+
+
+--
+select * from (
+SELECT 'sub_category_id', 'sub_category_name', 'category_name','tbl_last_dt'
+UNION ALL
+ select 
+	  sub_category_id ,
+	  sub_category_name,      
+	  category_name ,
+		a.tbl_last_dt
+ FROM pkbc_sub_category a 
+		inner join pkbc_category b on a.category_id = b.category_id 
+) resulting_set        
+into outfile 'fullstg_pkbc_dim_sub_category.csv'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+ ;
+        
+--
+select 
+	ord_prod_id as row_id,       
+	a.order_id,       
+	DATE_FORMAT(b.order_date, '%Y%m%d %H:%i'),    
+	b.is_returned,     
+	quantity,        
+	discount ,       
+	shipping_cost   ,
+	profit     ,     
+	sales   ,        
+	DATE_FORMAT(ship_date, '%Y%m%d %H:%i'),
+	ship_mode   ,    
+	addr_id as address_id    ,  
+	cust_id   ,      
+	sub_category_id , 
+	a.product_id  ,
+	a.market   , 
+	DATE_FORMAT(order_date,'%m%d%Y'),
+	a.tbl_last_dt
+into outfile 'fullstg_pkbc_fact_orders.csv'
+  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n'
+  FROM pkbc_ord_prod a         
+  INNER JOIN pkbc_orders b on a.order_id = b.order_id
+  INNER JOIN pkbc_product c on a.product_id = c.product_id and a.market = c.market;
+  
+  insert into etl_extract_date(last_extract_date) values ( now() );
+  
+END;
+
+-- CALL USP_Run_ETL_Full_Extract();
+
+

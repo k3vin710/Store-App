@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5738A7E1-6B20-341C-1522-3824C278487C" name="DIM_CUSTOMER">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUST_ID" id="6E5298A4-2F4F-63EE-5DBC-A89CE1554C18">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Id.]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>CBAF43AF-46C8-832C-755E-2C3A837EB04B</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST_NAME" id="E5EA2D43-07D2-1674-411C-D95843B35BE4">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer name]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>9A7FE2A7-7F74-F781-23AF-E4CC1D29D61E</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEGMENT" id="C6EA128E-9A81-1823-0FDA-395FE734C452">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Segment. 1: Consumer , 2: Corporate, 3: Home Office]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>04D87869-BE15-1CD4-A3BB-13416C82CE0F</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="9BFADD61-019D-D530-9E99-96F61C6082B8">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-01 22:47:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email of the customer]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F0F4EFE-A9DD-C481-30F4-14C3946B67E7" name="PKBC_CUSTOMER PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E5298A4-2F4F-63EE-5DBC-A89CE1554C18</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

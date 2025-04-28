@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C34BF0AE-4A9C-02BD-734E-D2EE9EBA42A5" name="DIM_CUSTOMER">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<generatorID>5738A7E1-6B20-341C-1522-3824C278487C</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="52B58AFB-5004-2594-7BE9-87114729CBDC">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Id.]]></commentInRDBMS>
+<generatorID>6E5298A4-2F4F-63EE-5DBC-A89CE1554C18</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_NAME" id="1B6AC09A-F1B9-BB60-08D6-CEE3AA100F74">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer name]]></commentInRDBMS>
+<generatorID>E5EA2D43-07D2-1674-411C-D95843B35BE4</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGMENT" id="D714BDD8-37FC-6882-7613-667AB35EFA06">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Segment. 1: Consumer , 2: Corporate, 3: Home Office]]></commentInRDBMS>
+<generatorID>C6EA128E-9A81-1823-0FDA-395FE734C452</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="FCFECC08-4A18-A915-9A74-086784505A78">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Email of the customer]]></commentInRDBMS>
+<generatorID>9BFADD61-019D-D530-9E99-96F61C6082B8</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17E2324F-652F-E56C-4138-8336A2BB115A" name="DIM_CUSTOMER_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:07:28 UTC</createdTime>
+<generatorID>4F0F4EFE-A9DD-C481-30F4-14C3946B67E7</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52B58AFB-5004-2594-7BE9-87114729CBDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

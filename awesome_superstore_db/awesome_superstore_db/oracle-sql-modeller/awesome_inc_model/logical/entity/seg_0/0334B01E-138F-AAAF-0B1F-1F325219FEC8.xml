@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0334B01E-138F-AAAF-0B1F-1F325219FEC8" name="PKBC_ADDRESS">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ADDR_ID" id="5FA666F8-0EA5-AB79-5B7A-47F468889038">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address ID]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<importedID>E8978861-4592-2D02-8C62-6BBD39B634DF</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY_ID" id="3B798264-2B42-B647-E714-FFE2DE3ABF1C">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[City id]]></commentInRDBMS>
+<generatorID>08EADC51-8F11-DF2E-4802-749C6797940F</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<importedID>2A39B686-CB47-AC85-D8BC-2BBF75289A4D</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>31A23A63-BA3D-951E-9868-67B92A2948D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POSTAL_CODE" id="C24C2C6D-90BC-B37E-248B-F5CD56D47C47">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<importedID>60BEBFF6-8C18-C31E-361D-23D095D2FEEE</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST_ID" id="4638410D-AE6D-202E-FDC1-08662AF0E3ED">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-24 19:02:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer Id ]]></commentInRDBMS>
+<generatorID>6322C3C9-D03E-5FA4-9C7D-185B8ED5158D</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>6E5298A4-2F4F-63EE-5DBC-A89CE1554C18</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="504DE71A-CB72-0DE9-DF43-2F58B6A95EE8">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-24 20:14:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31B1006C-B64C-9C10-3C45-CEFCF7A4A844" name="PKBC_ADDRESS PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5FA666F8-0EA5-AB79-5B7A-47F468889038</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

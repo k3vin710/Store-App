@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="awesome_inc_model" id="E32C8C5C-FF41-3938-7D95-3DB9CBB57F84" version="3.5">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:46 UTC</createdTime>
+<ownerDesignName>advanced_project_v1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>E32C8C5C-FF41-3938-7D95-3DB9CBB57F84</designId>
+</OSDM_Design>

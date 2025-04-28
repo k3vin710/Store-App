@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C26184A8-A15A-55C4-ED26-C818C7027B49" name="PKBC_COUNTRY">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>E78D0A58-B0BA-5CD3-CAA2-3FEFA7697806</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="F906159F-32A6-A486-AEF0-48F2DDB61E5C">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country id]]></commentInRDBMS>
+<generatorID>9A3AFCC8-21C6-7936-5198-0A740A87E709</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="CE4F050C-924F-B919-BE75-E86578BAED75">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country Name]]></commentInRDBMS>
+<generatorID>0A81E416-5E40-C627-FC0C-30F91EA413E1</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="5395E13D-D650-7E21-2D56-122E6F39E12F">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<generatorID>3514D956-71B1-7236-1AE4-76590962FB00</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="625577B6-D897-9148-FF88-D250C94D4495">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-26 02:28:49 UTC</createdTime>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0E1D093-E494-AB84-01E0-A2A364365187" referredColumn="57425273-67D7-1F89-D34C-4B7FF016F40F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="758F4A94-C6D9-B476-76BB-823DEBC6B285" name="PKBC_COUNTRY_PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:35:41 UTC</createdTime>
+<generatorID>A3E82B6B-5838-428A-EB5A-2999F320ACAD</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F906159F-32A6-A486-AEF0-48F2DDB61E5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D614BFC-C59E-DAF4-7513-49A02147398C" name="PKBC_COUNTRY_PKBC_REGION_FK">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-10-26 02:28:49 UTC</createdTime>
+<generatorID>19B63853-FEAC-579D-0E5F-42695DDA233D</generatorID>
+<ownerDesignName>awesome_inc_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="625577B6-D897-9148-FF88-D250C94D4495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

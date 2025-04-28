@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DA30154-011D-7229-DA0F-B4D5DBDB4DBE" name="DIM_PRODUCT">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCT_ID" id="E00CD186-1E2D-C5FC-1BB2-F92BBDE7CA46">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<comment><![CDATA[Order id]]></comment>
+<commentInRDBMS><![CDATA[Product  id.]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>D5B193B8-0DB5-E2B7-BEF0-14D1B452F563</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_NAME" id="F176E9B1-75E3-4846-EF61-6C70862ED0AD">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Name]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>96A1A936-4E54-B7EA-6F4B-4C4C0014B34A</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT_PRICE" id="715A084F-57ED-B548-45E9-0D6CE2B6213B">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Price]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MARKET" id="13928DEF-6A87-CD0A-3EBE-234A0F2230C3">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Market. 1: Africa, 2: Asia Pacific, 3: Europe, 4: LATAM, 5: USCA
+
+
+
+]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>5548B610-0A67-9D30-78F9-29E859BE4D98</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E197A5F-85DC-FDC0-614C-79DA3C9F2563" name="PKBC_PRODUCT PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E00CD186-1E2D-C5FC-1BB2-F92BBDE7CA46</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

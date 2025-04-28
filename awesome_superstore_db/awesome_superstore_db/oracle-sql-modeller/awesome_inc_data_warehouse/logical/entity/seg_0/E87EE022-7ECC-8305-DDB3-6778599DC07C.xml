@@ -1,0 +1,285 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E87EE022-7ECC-8305-DDB3-6778599DC07C" name="FACT_ORDERS">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ROW_ID" id="30B2DA36-C6FC-65D1-1D3E-CE01F65B0FF8">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:31:26 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_ID" id="B4DB4F97-7521-1F49-095F-D8E8EB38166B">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:11:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order id]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_DATE" id="3370DD9A-6AE1-4ADE-3B06-3003E7B08218">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:04:34 UTC</createdTime>
+<comment><![CDATA[Shipping date]]></comment>
+<commentInRDBMS><![CDATA[Oder Date]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS_RETURNED" id="ADC6B9B6-D413-4E2F-D1A4-4808DA1829E2">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:12:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Is returned]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY" id="C38AF3DE-E123-A816-E4A3-DB404360E65A">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product Quantity for the order]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>40ECAFE8-69A3-C1CF-0AF6-55D64268B276</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCOUNT" id="A53BE4FA-7054-9D9D-A656-EA29BBD7FCCD">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Discount for product of  the order]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>FB804B9F-A396-C27B-B5A2-90E6FB8E4777</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIPPING_COST" id="CD4E209B-493F-7A72-B999-728CD2DDC902">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Shipping cost for product of  the order]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>C8C8B441-501D-9990-FC5A-C3E77D12FE21</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROFIT" id="5A91C32C-00A4-4725-E2A5-7FDBCF083730">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Profit for product of  the order]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>8748F6CE-C137-D59A-7FEB-F6953FD905C8</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SALES" id="E17F7A06-4D1A-6A8F-06FF-EFC59FF9CC4D">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-22 20:11:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sales for the product of the order]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<importedID>DAFB2F67-055B-4356-746E-1056327A50A5</importedID>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="C57A8E7B-08A1-57F9-5687-1C83ECE80362">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-24 20:14:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Timestamp for the row data added]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIP_DATE" id="4D73E781-64CB-C585-32DE-DC9E084C4930">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:25:48 UTC</createdTime>
+<comment><![CDATA[Shipping date]]></comment>
+<commentInRDBMS><![CDATA[Shipping Date]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIP_MODE" id="3FF3DFCA-5780-2249-0C21-34F2CEA9EB20">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-29 02:25:48 UTC</createdTime>
+<comment><![CDATA[Shipping Mode. 1 : First Class , 2 : Second Class , 3 : Same Day, 4 : Standard Class  ]]></comment>
+<commentInRDBMS><![CDATA[Shipping Mode]]></commentInRDBMS>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADDRESS_ID" id="CF2FB03E-1660-22DB-E540-A4C688B83847">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:17:50 UTC</createdTime>
+<generatorID>D0546D51-D027-B003-7B71-9E73D073772B</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>31A23A63-BA3D-951E-9868-67B92A2948D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST_ID" id="9F339950-B81C-F469-9AE6-74367A09506D">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:18:31 UTC</createdTime>
+<generatorID>DA7A228A-6E79-874F-3BFA-3B7FB44058CF</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>6E5298A4-2F4F-63EE-5DBC-A89CE1554C18</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_CATEGORY_ID" id="4710BFB1-B7F1-D4E4-186D-69FB931A6645">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:18:50 UTC</createdTime>
+<generatorID>857B33E2-A07A-4273-A5B5-6A3EA6771D75</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>E1DC1BD1-1DF2-1F22-6A44-A78F16405DA3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_ID" id="DF4343D7-3E8D-63DD-3B80-038CBC4D5B8E">
+<createdBy>briancatraguna</createdBy>
+<createdTime>2023-11-18 04:19:24 UTC</createdTime>
+<comment><![CDATA[Order id]]></comment>
+<generatorID>517B14FF-9E4E-5316-3E32-6D453EBA29A1</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>E00CD186-1E2D-C5FC-1BB2-F92BBDE7CA46</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_ID" id="8CF82520-3620-4B68-9DCA-38979C5F6DE8">
+<createdBy>palak</createdBy>
+<createdTime>2023-11-18 22:02:04 UTC</createdTime>
+<generatorID>A199B279-3055-E619-5CE0-F5F0E9903B3D</generatorID>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<referedAttribute>C2903E51-68DF-D31F-7249-D42741EEF90A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CEFB94E-8310-53C9-02B5-5D259BED2081" name="PKBC_ORD_PROD PK">
+<createdBy>palak</createdBy>
+<createdTime>2023-09-25 00:57:15 UTC</createdTime>
+<ownerDesignName>awesome_inc_data_warehouse</ownerDesignName>
+<engineerTo>
+<item key="E92BBC06-E9C2-0715-0229-490C559BB7E2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>30B2DA36-C6FC-65D1-1D3E-CE01F65B0FF8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
